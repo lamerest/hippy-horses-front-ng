@@ -1,1 +1,111 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700&display=swap");
+
+html {
+  font-size: 0.8vw;
+
+  @media screen and (min-width: 1920px) {
+    font-size: 16px;
+  }
+}
+
+:root {
+  --green: #bbee91;
+  --blue: #5db6f8;
+  --purple: #bf5fcd;
+  --yellow: #fdf759;
+  --pr-black: #161616;
+  --pr-white: #f2f2f2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h4 {
+  font-family: Montserrat;
+  color: var(--pr-black);
+}
+
+.h {
+  &1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 6rem;
+    line-height: 7.3125rem;
+  }
+
+  &2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 3.6875rem;
+  }
+
+  &3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+
+  &4 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.875rem;
+    line-height: 130%;
+  }
+}
+
+.p {
+  font-family: Inconsolata;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 17px;
+  color: var(--pr-black);
+}
+
+.lead {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6875rem;
+  line-height: 140%;
+  color: var(--pr-white);
+}
+
+.micro {
+  font-family: Inconsolata;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 0.9375rem;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.link {
+  font-family: Inconsolata;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.25rem;
+  line-height: 160%;
+}
+
+.shadow {
+  filter: drop-shadow(-4px 4px 12px rgba(0, 0, 0, 0.8));
+}
+
+.btn {
+  padding: 1rem 2.25rem;
+  background-color: var(--pr-black);
+}
