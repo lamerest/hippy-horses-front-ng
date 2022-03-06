@@ -17,8 +17,9 @@ import { MintNftComponent } from './components/mint-nft/mint-nft.component';
 import { TeamComponent } from './components/team/team.component';
 import { AmbassadorsComponent } from './components/ambassadors/ambassadors.component';
 import { FaqComponent } from './components/faq/faq.component';
+import { MainComponent } from './views/main/main.component';
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, HeroComponent, SliderComponent, AboutComponent, RoadmapComponent, SocialMediaLeadComponent, MintTicketComponent, MintNftComponent, TeamComponent, AmbassadorsComponent, FaqComponent],
+  declarations: [AppComponent, HeaderComponent, FooterComponent, HeroComponent, SliderComponent, AboutComponent, RoadmapComponent, SocialMediaLeadComponent, MintTicketComponent, MintNftComponent, TeamComponent, AmbassadorsComponent, FaqComponent, MainComponent],
   imports: [BrowserModule, AppRoutingModule, SwiperModule],
   providers: [],
   bootstrap: [AppComponent],
