@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import Moralis from 'moralis/types';
+import Moralis from 'moralis';
 import { moralisEnv } from 'src/environments/moralis';
 
 @Component({
