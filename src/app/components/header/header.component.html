@@ -1,9 +1,9 @@
 <header class="header">
   <div class="container">
     <div class="logo">
-      <span>HIPPY</span>
+      <span class="logo__left">HIPPY</span>
       <img src="assets/icons/logo-60.png" alt="HIPPY HORSE LOGO" />
-      <span>HORSES</span>
+      <span class="logo__right">HORSES</span>
     </div>
     <nav class="menu">
       <ul class="menu__list">
@@ -17,22 +17,39 @@
     <div class="additional">
       <ul class="social-media">
         <li class="social-media__item">
-          <a href="">
+          <a href="" target="_blank">
             <img src="assets/icons/telegram-24.png" alt="Telegram" />
           </a>
         </li>
         <li class="social-media__item">
-          <a href="">
+          <a href="" target="_blank">
             <img src="assets/icons/opensea-24.png" alt="OpenSea" />
           </a>
         </li>
         <li class="social-media__item">
-          <a href="">
+          <a href="" target="_blank">
             <img src="assets/icons/discord-24.png" alt="Discord" />
           </a>
         </li>
       </ul>
-      <input class="language" type="checkbox" />
+      <label for="language">
+        <div class="language">
+          <input
+            (change)="changeLanguage()"
+            id="language"
+            class="language__checkbox"
+            type="checkbox"
+          />
+          <span class="language__lang">EN</span>
+          <div
+            [class.language__circle_active]="activeLang === 'EN'"
+            class="language__circle"
+          >
+            {{ activeLang }}
+          </div>
+          <span class="language__lang">RU</span>
+        </div>
+      </label>
     </div>
   </div>
 </header>
