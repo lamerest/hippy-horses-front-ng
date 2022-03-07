@@ -1,1 +1,37 @@
-<p>mint-nft works!</p>
+<div class="mint-nft">
+  <h2 class="h2 mint-nft__title">{{ text.title }}</h2>
+  <div class="mint-block">
+    <div class="mint">
+      <div class="h4 mint-nft__subtitle">{{ text.subtitle }}</div>
+      <div class="mint__line">
+        <span>{{ text.mintedText }}</span>
+        <span>{{ text.mintedAmount }}</span>
+      </div>
+      <div class="mint__line">
+        <span>{{ text.supplyText }}</span>
+        <span>{{ text.supplyAmount }}</span>
+      </div>
+      <div class="mint__line mint__line_last">
+        <span>{{ text.costText }}</span>
+        <span>{{ text.cost }}</span>
+      </div>
+      <div class="micro mint__question">{{ text.howMuch }}</div>
+      <div class="mint__input-block">
+        <input
+          min="1"
+          [max]="text.supplyAmount"
+          type="number"
+          placeholder="10"
+          class="input mint__input"
+        />
+        <button class="btn">{{ text.button }}</button>
+      </div>
+    </div>
+    <img
+      class="mint__img"
+      src="assets/img/nft-blue.png"
+      alt="Hippy Horse NFT"
+    />
+    <img src="assets/img/red-dude.png" alt="RED DUDE" class="decoration" />
+  </div>
+</div>
