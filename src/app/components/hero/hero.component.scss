@@ -1,0 +1,55 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  background: url("../../../assets/img/bg.png") center;
+  background-size: cover;
+
+  &__text-block {
+    padding-right: 6.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.container {
+  max-width: 90rem;
+  display: flex;
+  padding: 6.25rem 5rem;
+  justify-content: space-between;
+}
+
+.h1,
+.subtitle {
+  color: var(--pr-white);
+}
+
+.h1 {
+  padding-bottom: 3rem;
+}
+
+.subtitle {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.4375rem;
+  padding-bottom: 3rem;
+}
+
+.btn {
+  background-color: var(--yellow);
+  color: var(--pr-black);
+}
+.nft {
+  border-radius: 0.75rem;
+  outline: 0.1875rem solid white;
+  height: 27.625rem;
+  width: 27.625rem;
+  overflow: hidden;
+
+  &__img {
+    height: 100%;
+    width: 100%;
+  }
+}

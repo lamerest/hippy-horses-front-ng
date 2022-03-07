@@ -114,4 +114,14 @@ a {
 .btn {
   padding: 1rem 2.25rem;
   background-color: var(--pr-black);
+  border: none;
+  color: white;
+  border-radius: 0.25rem;
+
+  font-family: Inconsolata;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 160%;
+  color: var(--pr-white);
 }

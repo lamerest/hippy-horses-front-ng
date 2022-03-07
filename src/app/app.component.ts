@@ -11,8 +11,10 @@ export class AppComponent implements OnInit {
   title = 'hippy-horses-front-ng';
 
   ngOnInit() {
-    const serverUrl = moralisEnv.nodeUrl;
-    const appId = moralisEnv.appId;
-    Moralis.start({ serverUrl, appId });
+    const moralisOptions: Moralis.StartOptions = {
+      serverUrl: moralisEnv.nodeUrl,
+      appId: moralisEnv.appId,
+    };
+    Moralis.start(moralisOptions);
   }
 }

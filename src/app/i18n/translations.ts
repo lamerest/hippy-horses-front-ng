@@ -7,8 +7,8 @@ export const translations = {
   [Languages.RU]: {
     menu: ['О нас', 'Планы', 'Минт', 'Команда', 'Амбассадоры', 'F.A.Q.'],
     hero: {
-      subtitle: '',
-      button: '',
+      subtitle: 'Русский подзаголов',
+      button: 'Минт Hippy Horse',
     },
     about: [
       {
@@ -170,8 +170,8 @@ export const translations = {
   [Languages.EN]: {
     menu: ['About', 'Roadmap', 'Mint', 'Team', 'Ambassadors', 'F.A.Q.'],
     hero: {
-      subtitle: '',
-      button: '',
+      subtitle: 'Probably the best project you ever seen',
+      button: 'Mint Hippy Horse',
     },
     about: [
       {
