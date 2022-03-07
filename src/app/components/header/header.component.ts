@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Languages, translations } from 'src/app/text/translations';
+import { Languages, translations } from 'src/app/i18n/translations';
 
 @Component({
   selector: 'app-header',
