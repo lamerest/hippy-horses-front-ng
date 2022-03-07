@@ -1,1 +1,24 @@
-<p>roadmap works!</p>
+<section class="roadmap">
+  <h2 class="h2 roadmap__title">{{ text.title }}</h2>
+  <div class="graph">
+    <div
+      *ngFor="let event of text.events; let i = index"
+      [class.graph__event_reversed]="isEven(i)"
+      class="graph__event"
+    >
+      <div
+        class="graph__text-block-wrapper"
+        [class.graph__text-block-wrapper_reversed]="isEven(i)"
+      >
+        <div class="graph__text-block">
+          <h3 [style.color]="event.color" class="h4">{{ event.title }}</h3>
+          <p class="p">{{ event.text }}</p>
+        </div>
+      </div>
+      <div class="graph__date" [class.graph__date_reversed]="isEven(i)">
+        {{ event.date }}
+      </div>
+    </div>
+    <div class="graph__pole"></div>
+  </div>
+</section>

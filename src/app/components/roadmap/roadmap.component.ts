@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { translations } from 'src/app/i18n/translations';
+import { LangService } from 'src/app/services/lang.service';
 
 @Component({
   selector: 'app-roadmap',
   templateUrl: './roadmap.component.html',
-  styleUrls: ['./roadmap.component.scss']
+  styleUrls: ['./roadmap.component.scss'],
 })
-export class RoadmapComponent implements OnInit {
+export class RoadmapComponent {
+  text = translations[this.langService.activeLang].roadmap;
 
-  constructor() { }
+  constructor(private readonly langService: LangService) {}
 
-  ngOnInit(): void {
+  isEven(el: number) {
+    return (el + 1) % 2 === 0;
   }
-
 }

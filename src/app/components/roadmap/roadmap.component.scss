@@ -1,0 +1,62 @@
+.roadmap {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--green);
+  padding: 4rem 2rem;
+
+  &__title {
+    margin-bottom: 3.75rem;
+  }
+}
+
+.graph {
+  width: 100%;
+
+  &__event {
+    display: flex;
+    justify-content: center;
+
+    &_reversed {
+      flex-direction: row-reverse;
+      justify-content: center;
+    }
+  }
+  &__text-block-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+
+    &_reversed {
+      justify-content: flex-start;
+    }
+  }
+  &__text-block {
+    width: 23.4375rem;
+    padding: 1rem 2rem;
+    background: #ffffff;
+    border: 0.0625rem solid #000000;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+  }
+
+  &__date {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.875rem;
+    line-height: 130%;
+    color: var(--pr-black);
+
+    &_reversed {
+      justify-content: flex-end;
+    }
+  }
+  &__pole {
+  }
+}
