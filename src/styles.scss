@@ -75,8 +75,8 @@ a {
   font-family: Inconsolata;
   font-style: normal;
   font-weight: 300;
-  font-size: 16px;
-  line-height: 17px;
+  font-size: 1rem;
+  line-height: 1.0625rem;
   color: var(--pr-black);
 }
 
@@ -112,7 +112,11 @@ a {
 }
 
 .shadow {
-  filter: drop-shadow(-4px 4px 12px rgba(0, 0, 0, 0.8));
+  filter: drop-shadow(-0.25rem 0.25rem 0.75rem rgba(0, 0, 0, 0.8));
+
+  &_mini {
+    text-shadow: -0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.5);
+  }
 }
 
 .btn {
@@ -128,4 +132,26 @@ a {
   font-size: 1.25rem;
   line-height: 160%;
   color: var(--pr-white);
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__icon {
+    width: 2.25rem;
+    margin-left: -0.75rem;
+    margin-right: 1rem;
+  }
+}
+
+.input {
+  background: #f2f2f2;
+  border-radius: 8px;
+  border: none;
+  padding: 0 1.5rem;
+  font-size: 1.25rem;
+  font-family: Inconsolata;
+  font-style: normal;
+  font-weight: bold;
 }

@@ -25,6 +25,10 @@
     justify-content: center;
     align-items: center;
 
+    &:not(:last-of-type) {
+      margin-bottom: 3rem;
+    }
+
     &_reversed {
       flex-direction: row-reverse;
       justify-content: center;

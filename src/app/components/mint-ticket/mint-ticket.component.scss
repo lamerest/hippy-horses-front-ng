@@ -1,0 +1,101 @@
+.mint-ticket {
+  padding: 7.5rem 0;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+}
+
+.tickets-slider-wrapper {
+  overflow: hidden;
+}
+
+.tickets-slider {
+  width: 26.875rem;
+  margin-bottom: 3rem;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 0.5rem;
+  padding: 1.5rem 0.75rem;
+}
+
+.ticket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25rem;
+
+  &__img {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  &__cost {
+    margin-bottom: 1.5rem;
+
+    &-units {
+      font-size: 1.125rem;
+    }
+  }
+
+  &__name {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.text-gradient {
+  background: #000000;
+  background: -webkit-linear-gradient(
+    to left,
+    #000000 0%,
+    #ffffff 50%,
+    #000000 100%
+  );
+  background: -moz-linear-gradient(
+    to left,
+    #000000 0%,
+    #ffffff 50%,
+    #000000 100%
+  );
+  background: linear-gradient(to left, #000000 0%, #ffffff 50%, #000000 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mint {
+  width: 24.6875rem;
+  margin: auto;
+
+  &__line {
+    display: flex;
+    justify-content: space-between;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: black;
+    margin-bottom: 0.75rem;
+
+    &_last {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__question {
+    font-size: 1.125rem;
+    line-height: 1.1875rem;
+    color: black;
+    margin-bottom: 1rem;
+  }
+
+  &__input-block {
+    width: 100%;
+    display: flex;
+  }
+
+  &__input {
+    flex: 1;
+    margin-right: 0.75rem;
+  }
+}

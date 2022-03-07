@@ -1,1 +1,21 @@
-<p>social-media-lead works!</p>
+<section [style.background-color]="lead.background" class="lead">
+  <p class="lead lead__text">{{ lead.text }}</p>
+  <img
+    class="lead__arrow"
+    src="assets/icons/arrow-white.svg"
+    alt="Arrow"
+    class="lead__arrow"
+  />
+  <button
+    [style.background]="lead.buttonBackground"
+    [style.color]="lead.buttonColor"
+    class="btn"
+  >
+    <img
+      class="btn__icon"
+      [src]="'assets/icons/' + lead.icon"
+      alt="Hippy Horses social media"
+    />
+    {{ lead.button }}
+  </button>
+</section>
