@@ -1,6 +1,29 @@
+.swiper {
+  overflow: visible;
+}
+
 .swiper-slide {
   display: flex;
   justify-content: center;
+}
+
+.swiper-pagination {
+  transform: translateY(3rem);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  // color: var(--pr-black) !important;
+  opacity: 0.6;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  // background: #8f8f8f !important;
 }
 
 .nft-slider {

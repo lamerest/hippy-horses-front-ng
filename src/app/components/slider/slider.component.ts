@@ -13,6 +13,7 @@ export class SliderComponent implements OnInit {
     spaceBetween: 20,
     navigation: true,
     pagination: true,
+    loop: true,
   };
 
   slides = new Array(7);

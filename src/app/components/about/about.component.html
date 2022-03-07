@@ -1,1 +1,25 @@
-<p>about works!</p>
+<div class="about">
+  <div class="slider-wrapper about-slider">
+    <swiper [config]="config">
+      <ng-template *ngFor="let slide of slides; let i = index" swiperSlide>
+        <div class="slide">
+          <div
+            [style.background-color]="slide.background"
+            class="slide__text-block"
+          >
+            <h3 class="h3">{{ slide.title }}</h3>
+            <p [style.color]="slide.color" class="h4">{{ slide.substitle }}</p>
+            <p class="p">{{ slide.text }}</p>
+          </div>
+          <div class="slide__figure">
+            <img
+              class="slide__img"
+              [src]="'assets/img/' + slide.image"
+              alt="Hippy Horse NFT"
+            />
+          </div>
+        </div>
+      </ng-template>
+    </swiper>
+  </div>
+</div>
