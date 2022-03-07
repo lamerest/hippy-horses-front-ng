@@ -1,1 +1,13 @@
-<p>slider works!</p>
+<section class="slider">
+  <img class="decoration" src="assets/img/just-decoration.png" alt="Graphiti" />
+  <div class="slider-wrapper nft-slider">
+    <swiper [config]="config">
+      <ng-template *ngFor="let slide of slides; let i = index" swiperSlide>
+        <img
+          [src]="'assets/img/nfts/hippy-horses-NFT-' + (i + 1) + '.png'"
+          alt="Hippy Horse NFT"
+        />
+      </ng-template>
+    </swiper>
+  </div>
+</section>

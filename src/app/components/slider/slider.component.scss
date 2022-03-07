@@ -1,0 +1,16 @@
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3.875rem 0 9.375rem;
+  user-select: none;
+
+  &-wrapper {
+    width: 100%;
+  }
+}
+
+.decoration {
+  width: 14.75rem;
+  margin-bottom: 1.875rem;
+}
