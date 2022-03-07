@@ -15,10 +15,21 @@
           <p class="p">{{ event.text }}</p>
         </div>
       </div>
+      <div class="graph__dot"></div>
       <div class="graph__date" [class.graph__date_reversed]="isEven(i)">
         {{ event.date }}
       </div>
     </div>
     <div class="graph__pole"></div>
   </div>
+  <img
+    src="assets/img/style-on-the-street.png"
+    alt="Graffiti"
+    class="decoration decoration_left"
+  />
+  <img
+    src="assets/img/minimalism-on-site.png"
+    alt="Graffiti"
+    class="decoration decoration_right"
+  />
 </section>
