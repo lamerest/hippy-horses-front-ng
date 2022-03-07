@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Languages, translations } from 'src/app/text/translations';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  menu = ['Home', 'About', 'Roadmap', 'Mint', 'Team', 'Ambassadors', 'F.A.Q.'];
+  menu: string[] = translations[Languages.EN].menu;
 }

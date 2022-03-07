@@ -1,0 +1,54 @@
+.header {
+  background-color: var(--pr-white);
+  display: flex;
+  justify-content: center;
+  padding: 1rem 2rem;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: #161616;
+
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+
+  &__item {
+    font-family: Inconsolata;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.25rem;
+    line-height: 160%;
+    color: var(--pr-black);
+  }
+}
+
+.social-media {
+  width: calc(3 * 2rem + 1rem * 2);
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+
+  img {
+    width: 2rem;
+  }
+}
+
+.language {
+}
