@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
+import Moralis from 'moralis';
 
 @Component({
   selector: 'app-mint-nft',
   templateUrl: './mint-nft.component.html',
-  styleUrls: ['./mint-nft.component.scss']
+  styleUrls: ['./mint-nft.component.scss'],
 })
 export class MintNftComponent implements OnInit {
-
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
+    Moralis.start({});
   }
-
 }
