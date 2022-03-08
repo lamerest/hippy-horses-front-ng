@@ -1,1 +1,24 @@
-<p>team works!</p>
+<section class="team">
+  <h2 class="h2 team__title">{{ text.title }}</h2>
+  <div class="members">
+    <div *ngFor="let member of text.members" class="member">
+      <img
+        class="member__img"
+        [src]="'assets/img/' + member.name + '.png'"
+        alt="Hippy Horses team member"
+      />
+      <h3 class="h3 member__name">{{ member.name }}</h3>
+      <p class="micro member__description">{{ member.description }}</p>
+    </div>
+    <img
+      src="assets/img/fresh.png"
+      alt="fresh"
+      class="decoration decoration_fresh"
+    />
+    <img
+      src="assets/img/blood.png"
+      alt="blood"
+      class="decoration decoration_blood"
+    />
+  </div>
+</section>

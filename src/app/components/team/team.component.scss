@@ -1,0 +1,48 @@
+.team {
+  padding: 7.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    margin-bottom: 3.75rem;
+  }
+}
+
+.members {
+  position: relative;
+  display: flex;
+}
+
+.member {
+  padding: 0.75rem 0.75rem 2rem;
+  margin: 0 1.375rem;
+
+  &__name {
+    text-align: center;
+    padding-bottom: 0.75rem;
+  }
+
+  &__description {
+    text-align: center;
+  }
+
+  &__img {
+    width: 18.3125rem;
+  }
+}
+
+.decoration {
+  position: absolute;
+  height: 21.5rem;
+  top: 12rem;
+  transform: translateY(-50%);
+
+  &_fresh {
+    left: -7rem;
+  }
+
+  &_blood {
+    right: -7rem;
+  }
+}
