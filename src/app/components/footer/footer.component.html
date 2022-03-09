@@ -1,1 +1,57 @@
-<p>footer works!</p>
+<footer class="footer">
+  <nav>
+    <h4 class="h4 footer__header footer__header_menu">
+      {{ text.menu.blockName }}
+    </h4>
+    <ul class="menu">
+      <li
+        *ngFor="let item of text.menu.items"
+        (click)="navigateToBlock(item)"
+        class="link_with-arrow link menu__item"
+      >
+        {{ item }}
+      </li>
+    </ul>
+  </nav>
+  <div class="additional">
+    <h4 class="h4 footer__header footer__header_additional">
+      {{ text.additional.blockName }}
+    </h4>
+    <ul class="menu">
+      <li
+        *ngFor="let item of text.additional.items"
+        class="link_with-arrow link menu__item"
+      >
+        <a [href]="item.link" target="_blank">
+          {{ item.text }}
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="branding">
+    <img
+      src="assets/icons/logo-120.png"
+      alt="Hippy Horse NFT"
+      class="branding__logo"
+    />
+    <span class="branding__name">Hippy Horses</span>
+    <ul class="branding__socials">
+      <li class="branding__social-media">
+        <a href="">
+          <img src="assets/icons/telegram-24.png" alt="Telegram" />
+        </a>
+      </li>
+      <li class="branding__social-media">
+        <a href="">
+          <img src="assets/icons/opensea-24.png" alt="OpenSea" />
+        </a>
+      </li>
+      <li class="branding__social-media">
+        <a href="">
+          <img src="assets/icons/discord-24.png" alt="Discord" />
+        </a>
+      </li>
+    </ul>
+    <span class="branding__copyright micro">{{ text.copyright }}</span>
+  </div>
+</footer>

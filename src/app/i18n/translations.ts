@@ -379,9 +379,15 @@ export const translations = {
       ],
     },
     footer: {
-      menu: '',
-      additional: '',
-      copyright: '',
+      menu: {
+        blockName: 'Menu',
+        items: ['About', 'Roadmap', 'Mint', 'Team', 'Ambassadors', 'F.A.Q.'],
+      },
+      additional: {
+        blockName: 'Additional',
+        items: [{ text: 'Smart contract', link: 'etherscan.com' }],
+      },
+      copyright: 'Copyright “Hippy Horses”, 2022',
     },
   },
 };
