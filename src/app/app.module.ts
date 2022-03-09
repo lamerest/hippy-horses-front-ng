@@ -19,8 +19,26 @@ import { AmbassadorsComponent } from './components/ambassadors/ambassadors.compo
 import { FaqComponent } from './components/faq/faq.component';
 import { MainComponent } from './views/main/main.component';
 import { DecorationalLineComponent } from './components/decorational-line/decorational-line.component';
+import { QuestionComponent } from './components/faq/question/question.component';
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, HeroComponent, SliderComponent, AboutComponent, RoadmapComponent, SocialMediaLeadComponent, MintTicketComponent, MintNftComponent, TeamComponent, AmbassadorsComponent, FaqComponent, MainComponent, DecorationalLineComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    HeroComponent,
+    SliderComponent,
+    AboutComponent,
+    RoadmapComponent,
+    SocialMediaLeadComponent,
+    MintTicketComponent,
+    MintNftComponent,
+    TeamComponent,
+    AmbassadorsComponent,
+    FaqComponent,
+    MainComponent,
+    DecorationalLineComponent,
+    QuestionComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, SwiperModule],
   providers: [],
   bootstrap: [AppComponent],

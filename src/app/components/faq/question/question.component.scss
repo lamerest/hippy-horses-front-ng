@@ -1,0 +1,78 @@
+.question {
+  border-radius: 0.625rem;
+  margin-bottom: 1rem;
+
+  &__question-wrapper {
+    position: relative;
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    padding-right: 3rem;
+    border-bottom: 1px solid rgba(22, 22, 22, 0.3);
+
+    @media screen and (max-width: 500px) {
+      align-items: flex-start;
+    }
+  }
+
+  &__question {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 1.8125rem;
+    padding-bottom: 1rem;
+
+    &:after {
+      display: block;
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1.5rem;
+      height: 1.5rem;
+      transition: 0.3s ease-out;
+      background: url("../../../../assets/icons/Plus.svg") no-repeat center;
+      background-size: 100%;
+    }
+
+    &_expanded {
+      &:after {
+        background: url("../../../../assets/icons/Cross.svg") no-repeat center;
+        background-size: 100%;
+        transform: rotate(90deg) translateX(-50%);
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      display: flex;
+      align-items: center;
+      min-height: 2rem;
+      font-size: 1.375rem;
+      line-height: 100%;
+    }
+  }
+
+  &__answer {
+    padding: 0;
+    margin: 0;
+    // padding-left: 3.5rem;
+    overflow: hidden;
+    text-align: left;
+    font-family: Inconsolata;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 17px;
+
+    /* black */
+
+    color: #161616;
+
+    &_expanded {
+      padding: 0.75rem 0 0.5rem 0;
+    }
+  }
+}

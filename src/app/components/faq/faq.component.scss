@@ -1,0 +1,31 @@
+.faq {
+  padding: 7.5rem 0;
+  background-size: 100% 100%;
+  background-color: var(--blue);
+
+  &__header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  &__text {
+    width: 36.375rem;
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 3.125rem;
+
+    @media screen and (max-width: 500px) {
+      margin-bottom: 1.25rem;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    padding: 3.125rem 2rem 2.1875rem;
+    background-size: cover;
+  }
+}
+
+.container {
+  max-width: 50rem;
+  margin: auto;
+}

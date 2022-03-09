@@ -1,0 +1,18 @@
+<div class="question">
+  <div (click)="toggleAnswer()" class="h3 question__question-wrapper">
+    <p
+      [class.question__question_expanded]="isAnswerExpanded"
+      class="question__question"
+    >
+      {{ question.question }}
+    </p>
+  </div>
+  <p
+    [class.question__answer_expanded]="isAnswerExpanded"
+    [style.height]="isAnswerExpanded ? height : 0"
+    class="plain question__answer"
+    #answer
+  >
+    {{ question.answer }}
+  </p>
+</div>

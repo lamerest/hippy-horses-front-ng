@@ -1,1 +1,10 @@
-<p>faq works!</p>
+<div class="faq" id="faq">
+  <div class="container">
+    <h2 class="h2 faq__header">F.A.Q.</h2>
+    <app-question
+      *ngFor="let question of faqs; let i = index"
+      [question]="question"
+      [index]="i + 1"
+    ></app-question>
+  </div>
+</div>
