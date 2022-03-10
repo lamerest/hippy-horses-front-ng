@@ -6,7 +6,7 @@ import { Languages, translations } from 'src/app/i18n/translations';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  activeLang: 'RU' | 'EN' = 'EN';
+  @Input() activeLang: "RU" | "EN";
 
   isMobileMenuOpen = false;
 

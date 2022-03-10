@@ -144,17 +144,17 @@ export const translations = {
         {
           name: 'Богдан',
           description: 'Оснвоатель, медиа-менеджер',
-          img: 'bogdan.png',
+          img: 'Bogdan.png',
         },
         {
           name: 'Слава',
           description: 'Дизайнер, фронт-енд разработчик',
-          img: 'slava.png',
+          img: 'Slava.png',
         },
         {
           name: 'Андрей',
           description: 'Блокчейн разработчик',
-          img: 'andrew.png',
+          img: 'Andrew.png',
         },
       ],
     },
@@ -209,9 +209,15 @@ export const translations = {
       ],
     },
     footer: {
-      menu: 'Меню',
-      additional: 'Дополнительно',
-      copyright: 'Copyright "Hippy Horses, 2022"',
+      menu: {
+        blockName: 'Меню',
+        items: ['О нас', 'Дорожная карта', 'Чеканка', 'Команда', 'F.A.Q.'],
+      },
+      additional: {
+        blockName: 'Дополнительно',
+        items: [{ text: 'Смарт контракт', link: 'etherscan.com' }],
+      },
+      copyright: 'Копирайт “Hippy Horses”, 2022',
     },
   },
   [Languages.EN]: {
@@ -304,7 +310,8 @@ export const translations = {
           cost: 0.04,
           minted: 127,
           supply: 1000,
-          description: 'Provide 15% of discount to the mint price, guaranteed uncomon feature, much more increased chance of rare feature, increased chance of mystic feature. Also after the mint owners of those tickets will receive official merch of the project.',
+          description:
+            'Provide 15% of discount to the mint price, guaranteed uncomon feature, much more increased chance of rare feature, increased chance of mystic feature. Also after the mint owners of those tickets will receive official merch of the project.',
           color: '#72DDFF',
           type: 'diamond',
         },
@@ -342,17 +349,17 @@ export const translations = {
         {
           name: 'Bogdan',
           description: 'CEO, media-manager',
-          img: 'bogdan.png',
+          img: 'Bogdan.png',
         },
         {
           name: 'Slava',
           description: 'Designer, frontend developer',
-          img: 'slava.png',
+          img: 'Slava.png',
         },
         {
           name: 'Andrew',
           description: 'Blockchain developer',
-          img: 'andrew.png',
+          img: 'Andrew.png',
         },
       ],
     },
