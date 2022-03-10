@@ -6,9 +6,9 @@ import { Languages, translations } from 'src/app/i18n/translations';
   styleUrls: ['./main.component.scss'],
 })
 export class MainComponent implements OnInit {
-  _standardLang = Languages.EN
+  _standardLang = Languages.RU
 
-  get standardLang() { return this._standardLang === Languages.EN ? 'RU' : 'EN'; }
+  get standardLang() { return this._standardLang === Languages.EN? "EN" : "RU" }
 
   text: any = translations[this._standardLang];
 
