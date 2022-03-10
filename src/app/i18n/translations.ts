@@ -88,7 +88,8 @@ export const translations = {
           cost: 0.01,
           minted: 123,
           supply: 1000,
-          description: 'Give you acces to mint 1 uncommon NFT.',
+          description:
+            'Предоставляют 10% скидку к  цене NFT токена.',
           color: '#B6531C',
           type: 'bronze',
         },
@@ -97,7 +98,8 @@ export const translations = {
           cost: 0.02,
           minted: 232,
           supply: 1000,
-          description: 'Give you acces to mint 1 rare NFT.',
+          description:
+            'Предоставляют 10% скидку к цене NFT токена, увеличенный шанс необычных характеристик, увеличенный шанс редких характеристик.',
           color: '#FFE600',
           type: 'gold',
         },
@@ -106,7 +108,7 @@ export const translations = {
           cost: 0.04,
           minted: 127,
           supply: 1000,
-          description: 'Give you acces to mint 1 extra rare NFT!',
+          description: 'Предоставляют 15% скидку к цене NFT токена, гарантированно нестандартные характеристики, гораздо более высокий шанс редких характеристик, повышенный шанс мистических характеристик. Также после окончания монетного двора владельцы этих билетов получат официальный мерч проекта.',
           color: '#72DDFF',
           type: 'diamond',
         },
