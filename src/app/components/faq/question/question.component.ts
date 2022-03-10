@@ -32,7 +32,7 @@ export class QuestionComponent implements AfterViewInit {
       }, 0);
     } else {
       if (window.innerWidth >= 1000) {
-        multiplier = 1.2;
+        multiplier = 0.9;
       } else if (window.innerWidth >= 500) {
         multiplier = 1.3;
       } else {

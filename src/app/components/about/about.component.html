@@ -7,8 +7,10 @@
             [style.background-color]="slide.background"
             class="slide__text-block"
           >
-            <h3 class="h3">{{ slide.title }}</h3>
-            <p [style.color]="slide.color" class="h4">{{ slide.substitle }}</p>
+            <h3 class="h3 slide__title">{{ slide.title }}</h3>
+            <p [style.color]="slide.color" class="h4 slide__subtitle">
+              {{ slide.substitle }}
+            </p>
             <p class="p">{{ slide.text }}</p>
           </div>
           <div class="slide__figure">
