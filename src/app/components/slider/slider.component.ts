@@ -9,11 +9,17 @@ SwiperCore.use([Navigation, Pagination]);
 })
 export class SliderComponent {
   config: SwiperOptions = {
-    slidesPerView: 'auto',
+    slidesPerView: 2,
     spaceBetween: 20,
+    centeredSlides: true,
     navigation: true,
     pagination: true,
     loop: true,
+    breakpoints: {
+      500: {
+        slidesPerView: 'auto',
+      },
+    },
   };
 
   slides = new Array(7);

@@ -22,6 +22,15 @@
     </div>
     <div class="graph__pole"></div>
   </div>
+  <div class="mobile-graph">
+    <div *ngFor="let event of text.events" class="mobile-graph__event">
+      <p class="graph__date">{{ event.date }}</p>
+      <div class="graph__text-block">
+        <h3 [style.color]="event.color" class="h4">{{ event.title }}</h3>
+        <p class="p">{{ event.text }}</p>
+      </div>
+    </div>
+  </div>
   <img
     src="assets/img/style-on-the-street.png"
     alt="Graffiti"
