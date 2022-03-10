@@ -10,6 +10,15 @@ export class HeaderComponent {
 
   isMobileMenuOpen = false;
 
+  translateTable = {
+    'О нас': 'About',
+    'Дорожная карта': 'Roadmap',
+    'Минт': 'Mint',
+    'Команда': 'Team',
+    'Амбассадоры': 'Ambassadors',
+    'F.A.Q.': 'F.A.Q.',
+  };
+
   @Input() menu: string[] = translations[Languages.EN].menu;
 
   @Output() languageChange = new EventEmitter<Languages>();
@@ -25,9 +34,22 @@ export class HeaderComponent {
   }
 
   navigateToBlock(blockName: string) {
-    const lang = this.activeLang === 'RU' ? Languages.RU : Languages.EN;
-
-    if (translations[lang].menu.includes(blockName)) {
+    switch (blockName) {
+      case 'О нас':
+        blockName = 'About';
+        break;
+      case 'Дорожная карта':
+        blockName = 'Roadmap';
+        break;
+      case 'Чеканка':
+        blockName = 'Mint';
+        break;
+      case 'Команда':
+        blockName = 'Team';
+        break;
+      case 'Амбассадоры':
+        blockName = 'Ambassadors';
+        break;
     }
 
     const el = document.getElementById(blockName.toLowerCase());
