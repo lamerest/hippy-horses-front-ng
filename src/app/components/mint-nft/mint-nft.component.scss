@@ -18,6 +18,12 @@
   margin: auto;
   position: relative;
   width: min-width;
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    padding: 0 3rem;
+    align-items: center;
+  }
 }
 
 .mint {
@@ -59,11 +65,21 @@
   &__input {
     flex: 1;
     margin-right: 0.75rem;
+
+    @media (max-width: 500px) {
+      width: 14rem;
+    }
   }
 
   &__img {
     width: 25rem;
     border-radius: 0.5rem;
+  }
+
+  @media (max-width: 500px) {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 3rem;
   }
 }
 
@@ -73,4 +89,8 @@
   top: 50%;
   transform: translateY(-50%);
   height: 20rem;
+
+  @media (max-width: 500px) {
+    display: none;
+  }
 }

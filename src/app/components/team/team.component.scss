@@ -12,6 +12,10 @@
 .members {
   position: relative;
   display: flex;
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
 }
 
 .member {
@@ -29,6 +33,10 @@
 
   &__img {
     width: 18.3125rem;
+
+    @media (max-width: 500px) {
+      width: 22rem;
+    }
   }
 }
 
@@ -44,5 +52,9 @@
 
   &_blood {
     right: -7rem;
+  }
+
+  @media (max-width: 500px) {
+    display: none;
   }
 }
