@@ -1,6 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { translations } from 'src/app/i18n/translations';
-import { LangService } from 'src/app/services/lang.service';
+import { Component, Input } from '@angular/core';
 import { SwiperOptions } from 'swiper/types/swiper-options';
 
 @Component({
@@ -8,8 +6,8 @@ import { SwiperOptions } from 'swiper/types/swiper-options';
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss'],
 })
-export class AboutComponent implements OnInit {
-  slides = translations[this.langService.activeLang].about;
+export class AboutComponent {
+  @Input() slides: any[];
 
   config: SwiperOptions = {
     slidesPerView: 1,
@@ -17,8 +15,4 @@ export class AboutComponent implements OnInit {
     pagination: true,
     loop: true,
   };
-
-  constructor(private readonly langService: LangService) {}
-
-  ngOnInit(): void {}
 }

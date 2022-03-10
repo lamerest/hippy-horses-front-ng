@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import SwiperCore, { Navigation, Pagination, SwiperOptions } from 'swiper';
 
 SwiperCore.use([Navigation, Pagination]);
@@ -7,7 +7,7 @@ SwiperCore.use([Navigation, Pagination]);
   templateUrl: './slider.component.html',
   styleUrls: ['./slider.component.scss'],
 })
-export class SliderComponent implements OnInit {
+export class SliderComponent {
   config: SwiperOptions = {
     slidesPerView: 'auto',
     spaceBetween: 20,
@@ -17,8 +17,4 @@ export class SliderComponent implements OnInit {
   };
 
   slides = new Array(7);
-
-  constructor() {}
-
-  ngOnInit(): void {}
 }

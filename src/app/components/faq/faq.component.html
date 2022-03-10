@@ -1,8 +1,8 @@
 <div class="faq" id="faq">
   <div class="container">
-    <h2 class="h2 faq__header">F.A.Q.</h2>
+    <h2 class="h2 faq__header">{{ context.title }}</h2>
     <app-question
-      *ngFor="let question of faqs; let i = index"
+      *ngFor="let question of context.questions; let i = index"
       [question]="question"
       [index]="i + 1"
     ></app-question>

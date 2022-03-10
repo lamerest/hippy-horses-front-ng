@@ -1,5 +1,4 @@
-import { Component, Input, OnChanges } from '@angular/core';
-import { Languages, translations } from 'src/app/i18n/translations';
+import { Component, Input } from '@angular/core';
 import SwiperCore, { SwiperOptions, Virtual } from 'swiper';
 
 SwiperCore.use([Virtual]);
@@ -8,8 +7,8 @@ SwiperCore.use([Virtual]);
   templateUrl: './mint-ticket.component.html',
   styleUrls: ['./mint-ticket.component.scss'],
 })
-export class MintTicketComponent implements OnChanges {
-  @Input() lang: Languages = Languages.EN;
+export class MintTicketComponent {
+  @Input() context: any;
 
   config: SwiperOptions = {
     navigation: true,
@@ -28,17 +27,10 @@ export class MintTicketComponent implements OnChanges {
     description: 'Give you acces to mint 1 uncommon NFT.',
   };
 
-  mintTicketsText = translations[Languages.EN].mintTicket;
-
-  ngOnChanges() {
-    this.mintTicketsText = translations[Languages.EN].mintTicket;
-  }
-
   sliderIndexChanged(sliderInstance: any) {
     const slideIndex = sliderInstance[0].activeIndex;
-    console.log(slideIndex);
     setTimeout(() => {
-      this.activeTicket.type = this.mintTicketsText.tickets[slideIndex].type;
+      this.activeTicket.type = this.context.tickets[slideIndex].type;
     }, 0);
   }
 

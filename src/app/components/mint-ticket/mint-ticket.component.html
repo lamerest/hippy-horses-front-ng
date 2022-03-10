@@ -1,5 +1,5 @@
 <section class="mint-ticket">
-  <h2 class="mint-ticket__title h2">{{ mintTicketsText.title }}</h2>
+  <h2 class="mint-ticket__title h2">{{ context.title }}</h2>
   <div class="tickets-slider-wrapper">
     <swiper
       [config]="config"
@@ -7,7 +7,7 @@
       class="tickets-slider"
     >
       <ng-template
-        *ngFor="let ticket of mintTicketsText.tickets"
+        *ngFor="let ticket of context.tickets"
         class="ticket"
         swiperSlide
       >
@@ -29,22 +29,22 @@
   </div>
   <div class="mint">
     <div class="mint__line">
-      <span>{{ mintTicketsText.type }}</span>
+      <span>{{ context.type }}</span>
       <span>{{ activeTicket.type }}</span>
     </div>
     <div class="mint__line">
-      <span>{{ mintTicketsText.minted }}</span>
+      <span>{{ context.minted }}</span>
       <span>{{ activeTicket.minted }}</span>
     </div>
     <div class="mint__line">
-      <span>{{ mintTicketsText.supply }}</span>
+      <span>{{ context.supply }}</span>
       <span>{{ activeTicket.supply }}</span>
     </div>
     <div class="mint__line mint__line_last">
-      <span>{{ mintTicketsText.cost }}</span>
+      <span>{{ context.cost }}</span>
       <span>{{ activeTicket.cost }}</span>
     </div>
-    <div class="micro mint__question">{{ mintTicketsText.howMuch }}</div>
+    <div class="micro mint__question">{{ context.howMuch }}</div>
     <div class="mint__input-block">
       <input
         min="1"
@@ -53,7 +53,7 @@
         placeholder="10"
         class="input mint__input"
       />
-      <button class="btn">{{ mintTicketsText.button }}</button>
+      <button class="btn">{{ context.button }}</button>
     </div>
   </div>
 </section>
