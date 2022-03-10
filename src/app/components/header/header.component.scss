@@ -52,6 +52,22 @@
 
   @media (max-width: 500px) {
     display: none;
+
+    &_mobile {
+      display: block;
+
+      .menu__list {
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .menu__item {
+        font-size: 2rem;
+        padding-right: 0;
+      }
+    }
   }
 }
 
@@ -137,12 +153,31 @@
 }
 
 .mobile-menu {
+  position: fixed;
+  inset: 0;
+  transform: translateY(-100%);
+  background-color: var(--pr-white);
+  transition: 0.3s ease-out;
+  z-index: 3;
+
   &__button {
     display: none;
     width: 2rem;
     margin-left: 1rem;
+
     @media (max-width: 500px) {
       display: block;
     }
+  }
+
+  &_open {
+    transform: translateY(0%);
+  }
+
+  &__close-btn {
+    position: fixed;
+    width: 3rem;
+    top: 2rem;
+    right: 2rem;
   }
 }

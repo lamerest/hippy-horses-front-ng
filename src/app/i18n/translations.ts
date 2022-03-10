@@ -5,7 +5,7 @@ export enum Languages {
 
 export const translations = {
   [Languages.RU]: {
-    menu: ['О нас', 'Планы', 'Минт', 'Команда', 'Амбассадоры', 'F.A.Q.'],
+    menu: ['О нас', 'Планы', 'Минт', 'Команда', 'F.A.Q.'],
     hero: {
       subtitle: 'Русский подзаголов',
       button: 'Минт Hippy Horse',
@@ -185,7 +185,7 @@ export const translations = {
     },
   },
   [Languages.EN]: {
-    menu: ['About', 'Roadmap', 'Mint', 'Team', 'Ambassadors', 'F.A.Q.'],
+    menu: ['About', 'Roadmap', 'Mint', 'Team', 'F.A.Q.'],
     hero: {
       subtitle: 'Probably the best project you ever seen',
       button: 'Mint Hippy Horse',

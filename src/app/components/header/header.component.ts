@@ -8,6 +8,8 @@ import { Languages, translations } from 'src/app/i18n/translations';
 export class HeaderComponent {
   activeLang: 'RU' | 'EN' = 'EN';
 
+  isMobileMenuOpen = false;
+
   @Input() menu: string[] = translations[Languages.EN].menu;
 
   @Output() languageChange = new EventEmitter<Languages>();
@@ -18,7 +20,20 @@ export class HeaderComponent {
     this.languageChange.emit(lang);
   }
 
-  openMobileMenu() {
-    
+  toggleMobileMenu() {
+    this.isMobileMenuOpen = !this.isMobileMenuOpen;
+  }
+
+  navigateToBlock(blockName: string) {
+    const lang = this.activeLang === 'RU' ? Languages.RU : Languages.EN;
+
+    if (translations[lang].menu.includes(blockName)) {
+    }
+
+    const el = document.getElementById(blockName.toLowerCase());
+    this.toggleMobileMenu();
+    el.scrollIntoView({
+      behavior: 'smooth',
+    });
   }
 }

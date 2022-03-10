@@ -11,8 +11,12 @@
     </div>
     <nav class="menu">
       <ul class="menu__list">
-        <li *ngFor="let item of menu" class="menu__item link">
-          <a href="">
+        <li
+          *ngFor="let item of menu"
+          (click)="navigateToBlock(item)"
+          class="menu__item link"
+        >
+          <a>
             {{ item }}
           </a>
         </li>
@@ -54,7 +58,7 @@
           <span class="language__lang">RU</span>
         </div>
       </label>
-      <button class="btn_naked" (click)="openMobileMenu()">
+      <button class="btn_naked" (click)="toggleMobileMenu()">
         <img
           class="mobile-menu__button"
           src="assets/icons/Menu.svg"
@@ -64,3 +68,18 @@
     </div>
   </div>
 </header>
+
+<div [class.mobile-menu_open]="isMobileMenuOpen" class="mobile-menu">
+  <nav class="menu_mobile">
+    <ul class="menu__list">
+      <li *ngFor="let item of menu" class="menu__item link">
+        <a (click)="navigateToBlock(item)">
+          {{ item }}
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <button (click)="toggleMobileMenu()" class="btn_naked mobile-menu__close-btn">
+    <img src="assets/icons/Cross.svg" alt="Close menu" />
+  </button>
+</div>
