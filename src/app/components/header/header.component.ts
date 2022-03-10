@@ -17,4 +17,8 @@ export class HeaderComponent {
     const lang = this.activeLang === 'RU' ? Languages.RU : Languages.EN;
     this.languageChange.emit(lang);
   }
+
+  openMobileMenu() {
+    
+  }
 }

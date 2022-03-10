@@ -9,6 +9,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 500px) {
+      padding-right: 0;
+    }
   }
 }
 
@@ -17,11 +21,19 @@
   display: flex;
   padding: 6.25rem 5rem;
   justify-content: space-between;
+
+  @media (max-width: 500px) {
+    padding: 10rem 2rem; 
+  }
 }
 
 .h1,
 .subtitle {
   color: var(--pr-white);
+
+  @media (max-width: 500px) {
+    text-align: center; 
+  }
 }
 
 .h1 {
@@ -40,7 +52,12 @@
 .btn {
   background-color: var(--yellow);
   color: var(--pr-black);
+
+  @media (max-width: 500px) {
+    margin: auto; 
+  }
 }
+
 .nft {
   border-radius: 0.75rem;
   outline: 0.1875rem solid white;
@@ -51,5 +68,9 @@
   &__img {
     height: 100%;
     width: 100%;
+  }
+
+  @media (max-width: 500px) {
+    display: none;
   }
 }

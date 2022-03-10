@@ -49,6 +49,10 @@
     line-height: 160%;
     color: var(--pr-black);
   }
+
+  @media (max-width: 500px) {
+    display: none;
+  }
 }
 
 .additional {
@@ -125,5 +129,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+.mobile-menu {
+  &__button {
+    display: none;
+    width: 2rem;
+    margin-left: 1rem;
+    @media (max-width: 500px) {
+      display: block;
+    }
   }
 }
