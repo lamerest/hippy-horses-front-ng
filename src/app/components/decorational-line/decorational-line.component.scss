@@ -2,4 +2,8 @@
   height: 6rem;
   background: url("../../../assets/img/graffiti-hippy-horses.png") repeat center;
   background-size: contain;
+
+  @media (max-width: 500px) {
+    background-repeat: no-repeat;
+  }
 }

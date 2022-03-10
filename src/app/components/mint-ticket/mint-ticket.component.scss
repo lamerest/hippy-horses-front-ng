@@ -17,6 +17,10 @@
   border: 0.0625rem solid rgba(0, 0, 0, 0.4);
   border-radius: 0.5rem;
   padding: 1.5rem 0.75rem;
+
+  @media (max-width: 500px) {
+    width: 22rem;
+  }
 }
 
 .ticket {
@@ -61,6 +65,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .mint {
   width: 24.6875rem;
   margin: auto;

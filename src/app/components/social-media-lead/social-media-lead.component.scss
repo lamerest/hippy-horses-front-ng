@@ -7,5 +7,20 @@
   &__arrow {
     width: 1.875rem;
     margin: 0 1.5rem;
+
+    @media (max-width: 500px) {
+      margin: 0 0 1.5rem;
+      transform: rotate(90deg);
+    }
+  }
+  &__text {
+    @media (max-width: 500px) {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+  }
+  @media (max-width: 500px) {
+    flex-direction: column;
+    padding: 4rem 2rem;
   }
 }
