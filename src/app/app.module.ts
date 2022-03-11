@@ -39,7 +39,7 @@ import { QuestionComponent } from './components/faq/question/question.component'
     DecorationalLineComponent,
     QuestionComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, SwiperModule],
+  imports: [BrowserModule.withServerTransition({ appId: 'serverApp' }), AppRoutingModule, SwiperModule],
   providers: [],
   bootstrap: [AppComponent],
 })
