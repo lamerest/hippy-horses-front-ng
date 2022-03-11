@@ -85,17 +85,16 @@ export const translations = {
       tickets: [
         {
           name: 'Бронзовый',
-          cost: 0.01,
+          cost: 0.0077,
           minted: 123,
           supply: 1000,
-          description:
-            'Предоставляют 10% скидку к  цене NFT токена.',
+          description: 'Предоставляют 10% скидку к  цене NFT токена.',
           color: '#B6531C',
           type: 'bronze',
         },
         {
           name: 'Золотой',
-          cost: 0.02,
+          cost: 0.012,
           minted: 232,
           supply: 1000,
           description:
@@ -105,10 +104,11 @@ export const translations = {
         },
         {
           name: 'Алмазный',
-          cost: 0.04,
+          cost: 0.02,
           minted: 127,
           supply: 1000,
-          description: 'Предоставляют 15% скидку к цене NFT токена, гарантированно нестандартные характеристики, гораздо более высокий шанс редких характеристик, повышенный шанс мистических характеристик. Также после окончания монетного двора владельцы этих билетов получат официальный мерч проекта.',
+          description:
+            'Предоставляют 15% скидку к цене NFT токена, гарантированно нестандартные характеристики, гораздо более высокий шанс редких характеристик, повышенный шанс мистических характеристик. Также после окончания монетного двора владельцы этих билетов получат официальный мерч проекта.',
           color: '#72DDFF',
           type: 'diamond',
         },
@@ -258,22 +258,35 @@ export const translations = {
       title: 'Roadmap',
       events: [
         {
-          title: 'Project start',
-          text: 'Iaculis blandit molestie morbi gravida erat nulla. Libero, ut egestas adipiscing nulla pulvinar metus aenean id. Ut lacus semper donec donec tortor.',
-          date: '1 quarter 2022',
+          title: 'Presale & community',
+          text: 'Horses are growing in strength! We need to reach at least 10,000 followers on our socials to continue. During this period presale tickets are available for purchase. Each of them has it own benifits for early investors, such as minting price discounts, increased rarity chance, merch and more. Check minting tickets page for details⬇️',
+          date: '1st stage ',
           color: '#0092FF',
         },
         {
-          title: 'Presale',
-          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum sit id a nunc porttitor venenatis. Dui massa egestas vestibulum massa sapien aliquam vel mauris, congue.',
-          date: '2 quarter 2022',
+          title: 'Mint',
+          text: `Horses are joining the metaverse! NFT's are available for trading on marketplaces such as Opensea.`,
+          date: '2nd stage',
           color: '#FF322F',
         },
         {
-          title: 'Public sale',
-          text: 'Id proin ornare nunc bibendum mauris, laoreet. Diam tortor eu aliquam malesuada enim eget vitae faucibus. Purus enim sed metus et nibh pulvinar aliquet.',
-          date: '3 quarter 2022',
+          title: 'Cryptocurrency development',
+          text: 'When at least 25% of Horses met their new owners we begin developing of our own cryptocurrency smart-contract. There will  be a private ICO for horses holders, then public ICO on Coinlist or similar platform, then release on public marketplaces. On this stage of project we will also publish the whitepaper of our token, where you will be able to get more detailed info about the economics of our cryptocurrency. Cryptocurrency will ALWAYS receive liqudity from our GameFi projects.',
+          date: '3rd stage',
           color: '#489609',
+        },
+        {
+          title: 'Staking system',
+          text: `Hippy horses owners will be able to stake their NFT's on our website in order to receive Hippy horses token (own cryptocurrency of the project). Amount of tokens you receive will depend on your horse's rarity.`,
+          date: '3.5 stage',
+          color: '#0092FF',
+        },
+        {
+          title: 'Game development',
+          text: `To enter this stage 40% of NFT's need to be sold and/or 1stage of ICO need to be completed. We are planning to create series of mobile games, 50-80% of profits of which every month will be reinvested in cryptocurrency of our project (That includes ad profits, donations etc.) . It means that cryptocurrency of the project will always be 
+growing in liquidity, so NFT holders will also always receive passive income from their tokens.`,
+          date: '4th stage',
+          color: '#FF322F',
         },
       ],
     },
@@ -290,7 +303,7 @@ export const translations = {
       tickets: [
         {
           name: 'Bronze',
-          cost: 0.01,
+          cost: 0.0077,
           minted: 123,
           supply: 1000,
           description: 'Provide 10% discount to the mint price.',
@@ -299,7 +312,7 @@ export const translations = {
         },
         {
           name: 'Golden',
-          cost: 0.02,
+          cost: 0.012,
           minted: 232,
           supply: 1000,
           description:
@@ -309,7 +322,7 @@ export const translations = {
         },
         {
           name: 'Diamond',
-          cost: 0.04,
+          cost: 0.02,
           minted: 127,
           supply: 1000,
           description:
