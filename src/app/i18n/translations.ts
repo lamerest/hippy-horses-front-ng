@@ -133,7 +133,7 @@ export const translations = {
       button: 'Отчеканить',
     },
     discordLead: {
-      text: 'Заходите в наш DIscord, чтобы узнавать новости первым',
+      text: 'Заходите в наш Discord, чтобы узнавать новости первым',
       button: 'Присоединиться',
       icon: 'discord-naked.png',
       background: '#5DB6F8',
@@ -144,19 +144,19 @@ export const translations = {
       title: 'Команда',
       members: [
         {
-          name: 'Богдан',
+          name: 'Тео',
           description: 'Оснвоатель, медиа-менеджер',
-          img: 'Bogdan.png',
+          img: 'Teo.png',
         },
         {
-          name: 'Слава',
+          name: 'Исаак',
           description: 'Дизайнер, фронт-енд разработчик',
-          img: 'Slava.png',
+          img: 'Isaac.png',
         },
         {
-          name: 'Андрей',
+          name: 'Стэн',
           description: 'Блокчейн разработчик',
-          img: 'Andrew.png',
+          img: 'Stan.png',
         },
       ],
     },
@@ -362,19 +362,19 @@ growing in liquidity, so NFT holders will also always receive passive income fro
       title: 'Team',
       members: [
         {
-          name: 'Bogdan',
+          name: 'Teo',
           description: 'CEO, media-manager',
-          img: 'Bogdan.png',
+          img: 'Teo.png',
         },
         {
-          name: 'Slava',
+          name: 'Isaac',
           description: 'Designer, frontend developer',
-          img: 'Slava.png',
+          img: 'Isaac.png',
         },
         {
-          name: 'Andrew',
+          name: 'Stan',
           description: 'Blockchain developer',
-          img: 'Andrew.png',
+          img: 'Stan.png',
         },
       ],
     },
