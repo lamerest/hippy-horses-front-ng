@@ -96,6 +96,10 @@
     line-height: 1.1875rem;
     color: black;
     margin-bottom: 1rem;
+
+    @media (max-width: 500px) {
+      font-size: 1.5rem;
+    }
   }
 
   &__input-block {

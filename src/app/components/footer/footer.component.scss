@@ -19,6 +19,11 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: 100%;
+
+      @media (max-width: 500px) {
+        width: 2.2rem;
+        height: 2.2rem;
+      }
     }
 
     &_menu {
@@ -31,6 +36,10 @@
       &:before {
         background-image: url("../../../assets/icons/Additional.svg");
       }
+    }
+
+    @media (max-width: 500px) {
+      font-size: 2.5rem;
     }
   }
 
@@ -58,6 +67,10 @@
   &__logo {
     width: 7.5rem;
     margin-bottom: 1.5rem;
+
+    @media (max-width: 500px) {
+      width: 10rem;
+    }
   }
   &__name {
     text-transform: uppercase;
@@ -68,6 +81,10 @@
     line-height: 1.8125rem;
     color: #161616;
     margin-bottom: 1.5rem;
+
+    @media (max-width: 500px) {
+      font-size: 2.5rem;
+    }
   }
 
   &__socials {
@@ -79,6 +96,15 @@
   &__social-media {
     width: 1.5rem;
     margin: 0 0.5rem;
+
+    img {
+      width: 100%;
+    }
+
+    @media (max-width: 500px) {
+      width: 3rem;
+      margin: 0 1rem;
+    }
   }
 }
 

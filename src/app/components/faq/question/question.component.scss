@@ -21,7 +21,6 @@
     font-style: normal;
     font-weight: normal;
     font-size: 1.5rem;
-    line-height: 1.8125rem;
     padding-bottom: 1rem;
 
     &:after {
@@ -50,8 +49,7 @@
       display: flex;
       align-items: center;
       min-height: 2rem;
-      font-size: 1.375rem;
-      line-height: 100%;
+      font-size: 1.8rem;
     }
   }
 
@@ -65,7 +63,6 @@
     font-style: normal;
     font-weight: 300;
     font-size: 1rem;
-    line-height: 1.0625rem;
 
     /* black */
 
@@ -73,6 +70,10 @@
 
     &_expanded {
       padding: 0.75rem 0 0.5rem 0;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 1.5rem;
     }
   }
 }

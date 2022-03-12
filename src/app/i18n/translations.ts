@@ -259,7 +259,7 @@ export const translations = {
       events: [
         {
           title: 'Presale & community',
-          text: 'Horses are growing in strength! We need to reach at least 10,000 followers on our socials to continue. During this period presale tickets are available for purchase. Each of them has it own benifits for early investors, such as minting price discounts, increased rarity chance, merch and more. Check minting tickets page for details⬇️',
+          text: 'Horses are growing in strength! We need to reach at least 10,000 followers on our socials to continue. During this period presale tickets are available for purchase. Each of them has it own benifits for early investors, such as minting price discounts, increased rarity chance, merch and more.',
           date: '1st stage ',
           color: '#0092FF',
         },
