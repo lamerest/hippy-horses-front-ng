@@ -136,9 +136,9 @@ export const translations = {
       text: 'Заходите в наш Discord, чтобы узнавать новости первым',
       button: 'Присоединиться',
       icon: 'discord-naked.png',
-      background: '#5DB6F8',
-      buttonColor: 'black',
-      buttonBackground: '#BBEE91',
+      background: '#BF5FCD',
+      buttonColor: 'white',
+      buttonBackground: 'black',
     },
     team: {
       title: 'Команда',

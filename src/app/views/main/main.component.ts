@@ -6,22 +6,23 @@ import { Languages, translations } from 'src/app/i18n/translations';
   styleUrls: ['./main.component.scss'],
 })
 export class MainComponent implements OnInit {
-  _standardLang = Languages.RU
+  _standardLang = Languages.RU;
 
-  get standardLang() { return this._standardLang === Languages.EN? "EN" : "RU" }
+  get standardLang() {
+    return this._standardLang === Languages.EN ? 'EN' : 'RU';
+  }
 
   text: any = translations[this._standardLang];
 
   ngOnInit() {
-    this._standardLang = localStorage.getItem('language') as any as Languages?? Languages.EN
-    this.text = translations[this._standardLang]
-    console.log(this._standardLang, this.standardLang);
-    
+    this._standardLang =
+      (localStorage.getItem('language') as any as Languages) ?? Languages.EN;
+    this.text = translations[this._standardLang];
   }
 
   changeActiveLang(newLang: Languages) {
     this.text = translations[newLang];
-    this._standardLang = newLang
-    localStorage.setItem("language", newLang.toString())
+    this._standardLang = newLang;
+    localStorage.setItem('language', newLang.toString());
   }
 }
