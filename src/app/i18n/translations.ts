@@ -434,7 +434,7 @@ growing in liquidity, so NFT holders will also always receive passive income fro
     footer: {
       menu: {
         blockName: 'Menu',
-        items: ['About', 'Roadmap', 'Mint', 'Team', 'Ambassadors', 'F.A.Q.'],
+        items: ['About', 'Roadmap', 'Mint', 'Team', 'F.A.Q.'],
       },
       additional: {
         blockName: 'Additional',
