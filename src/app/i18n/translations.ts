@@ -15,7 +15,7 @@ export const translations = {
         title: 'Описание проекта',
         substitle:
           'Собственная криптовалюта, система депозита NFT и экономика GameFi!',
-        text: 'Проект будет выпущен на блокчейне Polygon, будет отчеканено 1500 предпродажных билетов и 10 000 NFT. После завершения этапа минта мы выпустим собственную криптовалюту, которую можно будет добывать через систему депозита NFT и всегда получать реальную денежную ликвидность от прибыли наших мобильных игр.',
+        text: 'Проект будет выпущен на блокчейне Polygon, будет отчеканено 1500 предпродажных билетов и 10 000 NFT. После завершения этапа минта мы выпустим собственную криптовалюту, которую можно будет добывать через систему депозита NFT. Затем наша команда создаст серию тематических мобильных игр, часть прибыли от которых будет ежемесячно инвестироваться в нашу криптовалюту, обеспечивая ей постоянный приток ликвидности, а держателям NFT - пассивный доход.',
         color: '#BBEE91',
         background: '#5DB6F8',
         image: 'nft-green.png',
@@ -31,7 +31,7 @@ export const translations = {
       {
         title: 'Наши большие цели',
         substitle: 'Метаверс на подходе!',
-        text: 'Лошади растут в числе! Для продолжения нам необходимо набрать не менее 10 000 подписчиков в наших офицмальнвх группах в соцсетях. В этот период доступны для продажи предпродажные билеты. Каждый из них имеет свои преимущества для ранних инвесторов, такие как ценовые скидки, повышенный шанс редкости, мерч и многое другое.',
+        text: 'Нашей долгосрочной стратегической целью является создание серии мобильных игр, прибыль от которых будет обеспечивать постоянные крипто-дивиденды для наших инвесторов НАВСЕГДА.',
         color: '#0092FF',
         background: '#BBEE91',
         image: 'nft-blue.png',
@@ -42,7 +42,7 @@ export const translations = {
       events: [
         {
           title: 'Предпродажа и сообщество',
-          text: 'Лошади растут в числе! Для продолжения нам необходимо набрать не менее 10 000 подписчиков в наших офицмальнвх группах в соцсетях. В этот период доступны для продажи предпродажные билеты. Каждый из них имеет свои преимущества для ранних инвесторов, такие как ценовые скидки, повышенный шанс редкости, мерч и многое другое.',
+          text: 'Лошади растут в числе! Для продолжения нам необходимо набрать не менее 10 000 подписчиков в наших официальных группах в соцсетях. В этот период доступны для продажи предпродажные билеты. Каждый из них имеет свои преимущества для ранних инвесторов, такие как ценовые скидки, повышенный шанс редкости, мерч и многое другое.',
           date: '1-й этап ',
           color: '#0092FF',
         },
@@ -73,7 +73,7 @@ export const translations = {
       ],
     },
     telegramLead: {
-      text: 'подпишитесь на наш Telegram, чтобы быть чатсью сообщества',
+      text: 'Подпишитесь на наш Telegram, чтобы быть чатсью сообщества',
       button: 'Войти в чат',
       icon: 'telegram-36.png',
       background: '#5DB6F8',
@@ -225,30 +225,30 @@ export const translations = {
   [Languages.EN]: {
     menu: ['About', 'Roadmap', 'Mint', 'Team', 'F.A.Q.'],
     hero: {
-      subtitle: 'Probably the best project you ever seen',
+      subtitle: '10,000 horses vibing in the metaverse.',
       button: 'Mint Hippy Horse',
     },
     about: [
       {
         title: 'Project description',
-        substitle: 'God’s blessing for NFT world',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. At urna felis turpis nullam placerat erat. \n\nScelerisque bibendum congue at fermentum. Scelerisque bibendum congue at fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. At urna felis turpis nullam placerat erat.',
+        substitle: 'Own cryptocurrency,  staking system & GameFi economics!',
+        text: `Project will be released on Polygon blockchain, there will be minted 1500 presale tickets and 10,000 NFT's. After mint stage is completed, we will release our own cryptocurrency, which can be mined via NFT staking system and will always receive real cash liquidity from  our games profit.`,
         color: '#BBEE91',
         background: '#5DB6F8',
         image: 'nft-green.png',
       },
       {
         title: 'New way of thinking',
-        substitle: 'We love crypto so we are gonna improve it!',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. At urna felis turpis nullam placerat erat. Scelerisque bibendum congue at fermentum.',
+        substitle: 'Not a picture, but a passive income',
+        text: 'We reconsidering NFT as an asset an adding an opportunity to stake it on our website and receive passive income in our own cryptocurrency. More rare your NFT - more tokens you get. Tokens on their side, will be powered by our GameFi profits.',
         color: '#FFFFFF',
         background: '#FFB5F7',
         image: 'nft-red.png',
       },
       {
         title: 'Our big goals',
-        substitle: 'Change the world of crypto',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. At urna felis turpis nullam placerat erat. Scelerisque bibendum congue at fermentum.',
+        substitle: 'Metaverse incoming!',
+        text: 'Our long term strategy is to create a series of mobile games, profit from which will grant constant crypto-dividends for our investors FOREVER.',
         color: '#0092FF',
         background: '#BBEE91',
         image: 'nft-blue.png',

@@ -79,7 +79,11 @@
       </li>
     </ul>
   </nav>
-  <button (click)="toggleMobileMenu()" class="btn_naked mobile-menu__close-btn">
+  <button
+    *ngIf="isMobileMenuOpen"
+    (click)="toggleMobileMenu()"
+    class="btn_naked mobile-menu__close-btn"
+  >
     <img src="assets/icons/Cross.svg" alt="Close menu" />
   </button>
 </div>
