@@ -5,7 +5,7 @@ export enum Languages {
 
 export const translations = {
   [Languages.RU]: {
-    menu: ['О нас', 'Дорожная карта', 'Чеканка', 'Команда', 'F.A.Q.'],
+    menu: ['О нас', 'Дорожная карта', 'Команда', 'F.A.Q.'],
     hero: {
       subtitle: '10 000 лошадей, покоряющих  метавселенную',
       button: 'Чеканка Hippy Horse',
@@ -184,27 +184,31 @@ export const translations = {
       title: 'F.A.Q.',
       questions: [
         {
-          question: 'How do I buy an NFT?',
+          question: 'Сколько стоит NFT?',
+          answer: '0.05-0.1 ETH',
+        },
+        {
+          question: 'Как купить NFT?',
           answer:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique pharetra ipsum tincidunt consectetur tincidunt. Sem facilisi malesuada imperdiet lectus. Volutpat sapien erat facilisis elit massa in. Rutrum feugiat quis nulla velit elit.',
         },
         {
-          question: 'Is it a good investment?',
+          question: 'Хорошая ли это инвестиция?',
           answer:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique pharetra ipsum tincidunt consectetur tincidunt. Sem facilisi malesuada imperdiet lectus. Volutpat sapien erat facilisis elit massa in. Rutrum feugiat quis nulla velit elit.',
         },
         {
-          question: 'How much will it cost later?',
+          question: 'Сколько они будут стоить потом?',
           answer:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique pharetra ipsum tincidunt consectetur tincidunt. Sem facilisi malesuada imperdiet lectus. Volutpat sapien erat facilisis elit massa in. Rutrum feugiat quis nulla velit elit.',
         },
         {
-          question: 'What the future of the project is?',
+          question: 'Каково будущее проекта?',
           answer:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique pharetra ipsum tincidunt consectetur tincidunt. Sem facilisi malesuada imperdiet lectus. Volutpat sapien erat facilisis elit massa in. Rutrum feugiat quis nulla velit elit.',
         },
         {
-          question: 'How to participate in presale ?',
+          question: 'Как участвовать в пресейле?',
           answer:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique pharetra ipsum tincidunt consectetur tincidunt. Sem facilisi malesuada imperdiet lectus. Volutpat sapien erat facilisis elit massa in. Rutrum feugiat quis nulla velit elit.',
         },
@@ -213,7 +217,7 @@ export const translations = {
     footer: {
       menu: {
         blockName: 'Меню',
-        items: ['О нас', 'Дорожная карта', 'Чеканка', 'Команда', 'F.A.Q.'],
+        items: ['О нас', 'Дорожная карта', 'Команда', 'F.A.Q.'],
       },
       additional: {
         blockName: 'Дополнительно',
@@ -223,7 +227,7 @@ export const translations = {
     },
   },
   [Languages.EN]: {
-    menu: ['About', 'Roadmap', 'Mint', 'Team', 'F.A.Q.'],
+    menu: ['About', 'Roadmap', 'Team', 'F.A.Q.'],
     hero: {
       subtitle: '10,000 horses vibing in the metaverse.',
       button: 'Mint Hippy Horse',
@@ -405,9 +409,8 @@ growing in liquidity, so NFT holders will also always receive passive income fro
       title: 'F.A.Q.',
       questions: [
         {
-          question: 'How do I buy an NFT?',
-          answer:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique pharetra ipsum tincidunt consectetur tincidunt. Sem facilisi malesuada imperdiet lectus. Volutpat sapien erat facilisis elit massa in. Rutrum feugiat quis nulla velit elit.',
+          question: 'How much does the NFT cost?',
+          answer: '0.05-0.1 ETH',
         },
         {
           question: 'Is it a good investment?',
@@ -434,7 +437,7 @@ growing in liquidity, so NFT holders will also always receive passive income fro
     footer: {
       menu: {
         blockName: 'Menu',
-        items: ['About', 'Roadmap', 'Mint', 'Team', 'F.A.Q.'],
+        items: ['About', 'Roadmap', 'Team', 'F.A.Q.'],
       },
       additional: {
         blockName: 'Additional',

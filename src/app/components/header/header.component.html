@@ -50,10 +50,10 @@
           />
           <span class="language__lang">EN</span>
           <div
-            [class.language__circle_active]="activeLang === 'EN'"
+            [class.language__circle_active]="activeLang === Languages.EN"
             class="language__circle"
           >
-            {{ activeLang }}
+            {{ activeLang === Languages.EN ? "EN" : "RU" }}
           </div>
           <span class="language__lang">RU</span>
         </div>

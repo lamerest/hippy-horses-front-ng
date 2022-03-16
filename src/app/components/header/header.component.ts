@@ -6,16 +6,18 @@ import { Languages, translations } from 'src/app/i18n/translations';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  @Input() activeLang: "RU" | "EN";
+  @Input() activeLang: Languages;
+
+  Languages = Languages;
 
   isMobileMenuOpen = false;
 
   translateTable = {
     'О нас': 'About',
     'Дорожная карта': 'Roadmap',
-    'Минт': 'Mint',
-    'Команда': 'Team',
-    'Амбассадоры': 'Ambassadors',
+    Минт: 'Mint',
+    Команда: 'Team',
+    Амбассадоры: 'Ambassadors',
     'F.A.Q.': 'F.A.Q.',
   };
 
@@ -24,13 +26,17 @@ export class HeaderComponent {
   @Output() languageChange = new EventEmitter<Languages>();
 
   changeLanguage() {
-    this.activeLang = this.activeLang === 'RU' ? 'EN' : 'RU';
-    const lang = this.activeLang === 'RU' ? Languages.RU : Languages.EN;
-    this.languageChange.emit(lang);
+    this.activeLang =
+      this.activeLang === Languages.EN ? Languages.RU : Languages.EN;
+    this.languageChange.emit(this.activeLang);
   }
 
   toggleMobileMenu() {
     this.isMobileMenuOpen = !this.isMobileMenuOpen;
+  }
+
+  closeMobileMenu() {
+    this.isMobileMenuOpen = false;
   }
 
   navigateToBlock(blockName: string) {
@@ -53,7 +59,7 @@ export class HeaderComponent {
     }
 
     const el = document.getElementById(blockName.toLowerCase());
-    this.toggleMobileMenu();
+    this.closeMobileMenu();
     el.scrollIntoView({
       behavior: 'smooth',
     });
