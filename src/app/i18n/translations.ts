@@ -184,33 +184,29 @@ export const translations = {
       title: 'F.A.Q.',
       questions: [
         {
-          question: 'Сколько стоит NFT?',
-          answer: 'Цена NFT будет варьироваться в районе 0.05-0.1 ETH',
-        },
-        {
           question: 'Как купить NFT?',
           answer:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique pharetra ipsum tincidunt consectetur tincidunt. Sem facilisi malesuada imperdiet lectus. Volutpat sapien erat facilisis elit massa in. Rutrum feugiat quis nulla velit elit.',
+            'Установите кошелек Metamask, переключите его на сеть Polygon, купите в обменнике Polygon (Matic) (купите на 2-5% больше для оплаты комиссии), переведите его на свой кошелек, зайдите на Uniswap.org, Там купите Ethereum за Polygon, перейдите на наш сайт, подключите свой кошелек, нажмите кнопку "mint" под NFT/билетом, который вы хотите приобрести, после этого действия NFT/билет будет переведен на ваш кошелек. Если у вас возникли вопросы, вы можете прочесть более подробное руководство в наших социальных сетях или просто спросить у наших сотрудников.',
         },
         {
-          question: 'Хорошая ли это инвестиция?',
+          question: 'Сколько будет стоить NFT?',
           answer:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique pharetra ipsum tincidunt consectetur tincidunt. Sem facilisi malesuada imperdiet lectus. Volutpat sapien erat facilisis elit massa in. Rutrum feugiat quis nulla velit elit.',
+            'Стоимость одного NFT будет варьироваться в диапазоне 0.05-0.1 ETH',
         },
         {
-          question: 'Сколько они будут стоить потом?',
+          question: 'Почему это хорошая инвестиция?',
           answer:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique pharetra ipsum tincidunt consectetur tincidunt. Sem facilisi malesuada imperdiet lectus. Volutpat sapien erat facilisis elit massa in. Rutrum feugiat quis nulla velit elit.',
+            'Долгосрочной целью нашего проекта является обеспечение постоянного денежного потока для наших инвесторов от мобильных игр, которые мы будем производить, поэтому его можно рассматривать как долгосрочную инвестицию. Кроме того, мы привлекаем популярных авторитетов для создания шумихи вокруг проекта и повышения его текущей стоимости.',
         },
         {
-          question: 'Каково будущее проекта?',
+          question: 'Как принять участие в предпродаже?',
           answer:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique pharetra ipsum tincidunt consectetur tincidunt. Sem facilisi malesuada imperdiet lectus. Volutpat sapien erat facilisis elit massa in. Rutrum feugiat quis nulla velit elit.',
+            'Купите предпродажный билет, чтобы получить бонусы во время основной продажи, и следите за нашими социальными сетями, чтобы не пропустить специальные акции.',
         },
         {
-          question: 'Как участвовать в пресейле?',
+          question: 'Когда состоится минт?',
           answer:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique pharetra ipsum tincidunt consectetur tincidunt. Sem facilisi malesuada imperdiet lectus. Volutpat sapien erat facilisis elit massa in. Rutrum feugiat quis nulla velit elit.',
+            'Минт будет проходить во второй половине апреля - первой половине мая. Точная дата будет объявлена в наших социальных сетях.',
         },
       ],
     },
@@ -409,28 +405,28 @@ growing in liquidity, so NFT holders will also always receive passive income fro
       title: 'F.A.Q.',
       questions: [
         {
+          question: 'How do I buy an NFT?',
+          answer:
+            'Install Metamask wallet, switch it to Polygon network, buy Polygon (Matic) in exchange (buy 2-5% more to pay fees) , transfer it to your wallet, go to Uniswap.org, buy Ethereum for Polygon, go to our website, connect your wallet, press the button "mint" under NFT/ticket you want to claim, after this action NFT/ticket will be transfered to your wallet. If you have any questions, you may follow our more detailed guide on our socials or just ask members of our staff.',
+        },
+        {
           question: 'How much does the NFT cost?',
           answer: 'Cost of NFT will vary between 0.05-0.1 ETH',
         },
         {
-          question: 'Is it a good investment?',
+          question: 'Why is it a good investment?',
           answer:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique pharetra ipsum tincidunt consectetur tincidunt. Sem facilisi malesuada imperdiet lectus. Volutpat sapien erat facilisis elit massa in. Rutrum feugiat quis nulla velit elit.',
+            'Long-term goal of our project is to provide constant cashflow to our investors from mobile games we will produce, so it can be considered as long-term investment.Moreover we attracting popular influencers to create Hype around the project and increase it`s current value.',
         },
         {
-          question: 'How much will it cost later?',
+          question: 'How to participate in presale?',
           answer:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique pharetra ipsum tincidunt consectetur tincidunt. Sem facilisi malesuada imperdiet lectus. Volutpat sapien erat facilisis elit massa in. Rutrum feugiat quis nulla velit elit.',
+            'Buy our presale ticket to receive bonuses during our main sale and follow our socials not to miss any special offers.',
         },
         {
-          question: 'What the future of the project is?',
+          question: 'When will the mint occur?',
           answer:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique pharetra ipsum tincidunt consectetur tincidunt. Sem facilisi malesuada imperdiet lectus. Volutpat sapien erat facilisis elit massa in. Rutrum feugiat quis nulla velit elit.',
-        },
-        {
-          question: 'How to participate in presale ?',
-          answer:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique pharetra ipsum tincidunt consectetur tincidunt. Sem facilisi malesuada imperdiet lectus. Volutpat sapien erat facilisis elit massa in. Rutrum feugiat quis nulla velit elit.',
+            'Mint will be held at second half of April - first half of May. Exact date will be anounced on our socials.',
         },
       ],
     },
