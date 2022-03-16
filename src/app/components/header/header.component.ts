@@ -31,15 +31,12 @@ export class HeaderComponent implements OnInit {
   @Output() languageChange = new EventEmitter<Languages>();
 
   ngOnInit() {
-    console.log(this.activeLang);
     this.languageChange.emit(this.activeLang);
   }
 
   changeLanguage() {
-    console.log('Change', this.activeLang, this.activeLang === Languages.EN);
     this._activeLang =
       this.activeLang === Languages.EN ? Languages.RU : Languages.EN;
-    console.log('Changed to', this.activeLang);
     this.languageChange.emit(this.activeLang);
     localStorage.setItem('language', this.activeLang.toString());
   }

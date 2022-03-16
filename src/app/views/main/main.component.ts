@@ -11,8 +11,6 @@ export class MainComponent {
   text: any = translations[Languages.RU];
 
   changeActiveLang(newLang: Languages) {
-    console.log('Active lang changed in main, new lang is:', newLang);
-
     setTimeout(() => {
       this.text = translations[newLang];
     }, 0);
