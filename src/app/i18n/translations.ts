@@ -185,7 +185,7 @@ export const translations = {
       questions: [
         {
           question: 'Сколько стоит NFT?',
-          answer: '0.05-0.1 ETH',
+          answer: 'Цена NFT будет варьироваться в районе 0.05-0.1 ETH',
         },
         {
           question: 'Как купить NFT?',
@@ -410,7 +410,7 @@ growing in liquidity, so NFT holders will also always receive passive income fro
       questions: [
         {
           question: 'How much does the NFT cost?',
-          answer: '0.05-0.1 ETH',
+          answer: 'Cost of NFT will vary between 0.05-0.1 ETH',
         },
         {
           question: 'Is it a good investment?',
