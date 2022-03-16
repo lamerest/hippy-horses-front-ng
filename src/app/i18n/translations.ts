@@ -75,7 +75,7 @@ export const translations = {
     telegramLead: {
       text: 'Подпишитесь на наш Telegram, чтобы быть чатсью сообщества',
       button: 'Войти в чат',
-      icon: 'telegram-36.png',
+      icon: 'telegram.svg',
       background: '#5DB6F8',
       buttonColor: 'black',
       buttonBackground: '#BBEE91',
@@ -135,7 +135,7 @@ export const translations = {
     discordLead: {
       text: 'Заходите в наш Discord, чтобы узнавать новости первым',
       button: 'Присоединиться',
-      icon: 'discord-naked.png',
+      icon: 'discord-naked.svg',
       background: '#BF5FCD',
       buttonColor: 'white',
       buttonBackground: 'black',
@@ -293,7 +293,7 @@ growing in liquidity, so NFT holders will also always receive passive income fro
     telegramLead: {
       text: 'Join our Telegram to be part of the community',
       button: 'Join chat',
-      icon: 'telegram-36.png',
+      icon: 'telegram.svg',
       background: '#5DB6F8',
       buttonColor: 'black',
       buttonBackground: '#BBEE91',
@@ -353,7 +353,7 @@ growing in liquidity, so NFT holders will also always receive passive income fro
     discordLead: {
       text: 'Follow our discord to be the first to know news',
       button: 'Join server',
-      icon: 'discord-naked.png',
+      icon: 'discord-naked.svg',
       background: '#BF5FCD',
       buttonColor: 'white',
       buttonBackground: 'black',
