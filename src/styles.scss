@@ -19,6 +19,7 @@ html {
 :root {
   --green: #bbee91;
   --blue: #5db6f8;
+  --red: #f07a78;
   --purple: #bf5fcd;
   --yellow: #fdf759;
   --pr-black: #161616;
@@ -119,12 +120,15 @@ a {
   align-items: center;
   padding: 0.75rem 2rem 0.75rem 0rem;
   cursor: pointer;
+  position: relative;
 
   font-family: Source Sans Pro;
   font-style: normal;
   font-weight: normal;
   font-size: 1.25rem;
   line-height: 160%;
+
+  transition: 0.3s ease-out;
 
   &_with-arrow {
     &:before {
@@ -137,6 +141,24 @@ a {
       background-image: url("assets/icons/arrow.svg");
       background-repeat: no-repeat;
       margin-right: 1rem;
+    }
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    transform: translateX(-50%);
+    border-top: 0.1875rem solid var(--pr-black);
+    transition: 0.3s ease-out;
+  }
+
+  &:hover {
+    &:after {
+      width: calc(100% - 2rem);
     }
   }
 
@@ -167,6 +189,7 @@ a {
   line-height: 160%;
   color: var(--pr-white);
   cursor: pointer;
+  transition: 0.3s ease-out;
 
   display: flex;
   justify-content: center;
@@ -194,4 +217,15 @@ a {
   font-family: Source Sans Pro;
   font-style: normal;
   font-weight: bold;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 0.75rem;
 }

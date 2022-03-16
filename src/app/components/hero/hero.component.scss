@@ -15,6 +15,29 @@
     }
   }
 
+  &__btn {
+    moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    background-size: 300% 100%;
+
+    background-image: linear-gradient(
+      to right,
+      var(--yellow),
+      #f5ce62,
+      #e43603,
+      #fa7199
+    );
+    // #e85a19
+    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+
+    &:hover {
+      background-position: 100% 0;
+      color: var(--pr-white);
+    }
+  }
+
   @media (max-width: 500px) {
     min-height: calc(100vh - 2.5rem);
   }

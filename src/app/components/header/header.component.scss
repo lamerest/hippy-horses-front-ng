@@ -48,6 +48,7 @@
     font-size: 1.25rem;
     line-height: 160%;
     color: var(--pr-black);
+    padding: 0.75rem 1rem;
   }
 
   @media (max-width: 500px) {
@@ -88,9 +89,14 @@
   }
 
   &__item {
+    transition: 0.1s ease-out;
     a {
       display: flex;
       align-items: center;
+    }
+
+    &:hover {
+      transform: scale(1.1);
     }
   }
 
@@ -109,6 +115,7 @@
   border-radius: 1.25rem;
   position: relative;
   user-select: none;
+  cursor: pointer;
 
   font-family: Montserrat;
   font-style: normal;
@@ -130,7 +137,7 @@
     justify-content: center;
     align-items: center;
 
-    transition: 0.2s ease-out;
+    transition: 0.3s ease-out;
 
     &_active {
       left: 0;

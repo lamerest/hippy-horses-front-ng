@@ -20,6 +20,16 @@
       margin-bottom: 1.5rem;
     }
   }
+
+  &__btn {
+    transition: 0.4s ease-out;
+
+    &:hover {
+      background-color: var(--pr-white) !important;
+      color: black !important;
+    }
+  }
+
   @media (max-width: 500px) {
     flex-direction: column;
     padding: 4rem 2rem;
