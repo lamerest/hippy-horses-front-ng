@@ -1,18 +1,17 @@
 <app-header
-  [activeLang]="standardLang"
-  [menu]="text.menu"
+  [menu]="text?.menu"
   (languageChange)="changeActiveLang($event)"
 ></app-header>
-<app-hero [text]="text.hero"></app-hero>
+<app-hero [text]="text?.hero"></app-hero>
 <app-slider></app-slider>
-<app-about [slides]="text.about"></app-about>
-<app-social-media-lead [context]="text.telegramLead"></app-social-media-lead>
-<app-roadmap [text]="text.roadmap"></app-roadmap>
-<app-social-media-lead [context]="text.discordLead"></app-social-media-lead>
+<app-about [slides]="text?.about"></app-about>
+<app-social-media-lead [context]="text?.telegramLead"></app-social-media-lead>
+<app-roadmap [text]="text?.roadmap"></app-roadmap>
+<app-social-media-lead [context]="text?.discordLead"></app-social-media-lead>
 <!-- <app-mint-ticket [context]="text.mintTicket"></app-mint-ticket> -->
 <!-- <app-mint-nft [text]="text.mintNFT"></app-mint-nft> -->
-<app-team [text]="text.team"></app-team>
+<app-team [text]="text?.team"></app-team>
 <app-decorational-line></app-decorational-line>
 <!-- <app-ambassadors [text]="text"></app-ambassadors> -->
-<app-faq [context]="text.faq"></app-faq>
-<app-footer [text]="text.footer"></app-footer>
+<app-faq [context]="text?.faq"></app-faq>
+<app-footer [text]="text?.footer"></app-footer>

@@ -1,27 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Languages, translations } from 'src/app/i18n/translations';
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss'],
 })
-export class MainComponent implements OnInit {
-  standardLang: Languages;
-
+export class MainComponent {
   Languages = Languages;
 
-  text: any;
-
-  ngOnInit() {
-    this.standardLang =
-      (localStorage.getItem('language') as any as Languages) ?? Languages.EN;
-    console.log(this.standardLang);
-    this.text = translations[this.standardLang];
-  }
+  text: any = translations[Languages.RU];
 
   changeActiveLang(newLang: Languages) {
-    this.text = translations[newLang];
-    this.standardLang = newLang;
-    localStorage.setItem('language', newLang.toString());
+    console.log('Active lang changed in main, new lang is:', newLang);
+
+    setTimeout(() => {
+      this.text = translations[newLang];
+    }, 0);
   }
 }

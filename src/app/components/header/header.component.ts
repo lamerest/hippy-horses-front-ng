@@ -1,12 +1,17 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { Languages, translations } from 'src/app/i18n/translations';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Languages } from 'src/app/i18n/translations';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
-export class HeaderComponent {
-  @Input() activeLang: Languages;
+export class HeaderComponent implements OnInit {
+  _activeLang: Languages =
+    +(localStorage.getItem('language') as any as Languages) ?? Languages.EN;
+
+  get activeLang() {
+    return this._activeLang;
+  }
 
   Languages = Languages;
 
@@ -21,14 +26,22 @@ export class HeaderComponent {
     'F.A.Q.': 'F.A.Q.',
   };
 
-  @Input() menu: string[] = translations[Languages.EN].menu;
+  @Input() menu: string[];
 
   @Output() languageChange = new EventEmitter<Languages>();
 
-  changeLanguage() {
-    this.activeLang =
-      this.activeLang === Languages.EN ? Languages.RU : Languages.EN;
+  ngOnInit() {
+    console.log(this.activeLang);
     this.languageChange.emit(this.activeLang);
+  }
+
+  changeLanguage() {
+    console.log('Change', this.activeLang, this.activeLang === Languages.EN);
+    this._activeLang =
+      this.activeLang === Languages.EN ? Languages.RU : Languages.EN;
+    console.log('Changed to', this.activeLang);
+    this.languageChange.emit(this.activeLang);
+    localStorage.setItem('language', this.activeLang.toString());
   }
 
   toggleMobileMenu() {
