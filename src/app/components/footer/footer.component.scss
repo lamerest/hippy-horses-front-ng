@@ -56,6 +56,10 @@
 
 .menu {
   list-style: none;
+
+  &__item {
+    width: fit-content;
+  }
 }
 
 .branding {
